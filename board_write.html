@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>요양병원</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <script src="script/jquery-3.7.1.min.js"></script>
+    <script src="script/action.js"></script>
+</head>
+<body>
+    <header>
+        <!-- include/header.html -->
+    </header>
+
+    
+    <div id="visual_sub">
+        <div class="model">
+            <img src="images/model.png" alt="">
+        </div>
+        <div class="centerbox">
+            <div class="text">
+                <strong></strong>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="section_sub" class="board_page">
+        <nav class="snb_box">
+            <ul class="snb">
+            
+            </ul>
+            <span class="line"></span>
+        </nav>
+
+        <div id="content_box">
+            <div class="centerbox">
+                <h2></h2>
+
+                <div class="content">
+                    <form action="board_write.html">
+                        <fieldset>
+                            <legend>글쓰기</legend>
+                            <ul class="write_box">
+                                <li>
+                                    <label for="" class="title">구분</label>
+                                    <div class="input_area">
+                                        <label for="division1">
+                                            <input type="radio" class="radio_button" id="division1" name="division" value="notice" checked>
+                                            <span class="radio_sign"></span>
+                                            공지사항
+                                        </label>
+                                        <label for="division2">
+                                            <input type="radio" class="radio_button" id="division2" name="division" value="secret"> 
+                                            <span class="radio_sign"></span>
+                                            비밀글
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label for="" class="title">제목</label>
+                                    <div class="input_area">
+                                        <input type="text" name="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <label for="" class="title">작성자</label>
+                                    <div class="input_area">
+                                        <input type="text" name="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <label for="" class="title">내용</label>
+                                    <div class="input_area">
+                                        <textarea name="" id=""></textarea>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label for="" class="title">파일첨부</label>
+                                    <div class="input_area">
+                                        <input type="file" id="file_select">
+
+                                        <span class="filezone">파일을 선택해주세요</span>
+                                        <label for="file_select">찾아보기</label>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="btns_box">
+                                <a href="board_list.html" class="btn_view2 color1">목록</a>
+                                <button class="btn_view2 color2">확인</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                   
+                </div>
+
+               
+            </div>
+        </div>
+    </div>
+
+    <footer></footer>
+
+</body>
+</html>
